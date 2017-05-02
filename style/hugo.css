@@ -1,0 +1,113 @@
+.hugo-wrapper {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 0px;
+	height: 0px;
+	border: 1px solid #CCC;
+	padding: 10px;
+	background-color: #FFF;
+	z-index: 10;
+}
+#hg-button {
+	background-image: url(hg-button.png);
+	height: 80px;
+	width: 80px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -35px;
+	left: -30px;
+}
+#hg-button.hg-closed {
+    -webkit-animation: breathing 3s ease-out infinite normal;
+    animation: breathing 3s ease-out infinite normal;
+    left: -50px;
+}
+.panel-title a span.glyphicon {
+	float: right;
+}
+@-webkit-keyframes breathing {
+	0% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	25% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	60% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	100% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+@keyframes breathing {
+	0% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	25% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+	60% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	100% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+.hg-title {
+	font-size: 20px;
+	padding-left: 50px;
+	padding-bottom: 10px;
+}
+.hg-reden-wrapper {
+	padding: 10px 0px;
+}
+.hg-buttons {
+	clear: both;
+}
+.hg-form-wrapper {
+	display: none;
+}
+
+/*BOOTSTRAP OVERWRITE*/
+#hg-form .form-group {
+	margin-bottom: 5px;
+}
+.entry-content #hg-form  a {
+	box-shadow: none;
+}
+#hg-form a:focus,
+#hg-form a:hover {
+	text-decoration: none;
+}
+#hg-form .btn-success.disabled.focus, 
+#hg-form .btn-success.disabled:focus, 
+#hg-form .btn-success.disabled:hover, 
+#hg-form .btn-success[disabled].focus, 
+#hg-form .btn-success[disabled]:focus, 
+#hg-form .btn-success[disabled]:hover, 
+#hg-form fieldset[disabled] .btn-success.focus, 
+#hg-form fieldset[disabled] .btn-success:focus, 
+#hg-form fieldset[disabled] .btn-success:hover {
+	background-color: #00AEEF;
+	border-color: #00AEEF;
+}
+#hg-form .btn-success {
+	border-color: #00AEEF;
+	background-color: #00AEEF;	
+}
